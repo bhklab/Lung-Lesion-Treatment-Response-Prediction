@@ -245,8 +245,7 @@ def var_filter(df,thresh):
 
 def cluster_red(df,var_thresh=10,distance_thresh=0.5):
     
-    # cols = df.columns
-    # df = df[cols[4:]]    # exclude header/descriptive columns
+
     cols_varred, df_varred = var_filter(df,var_thresh)
 
     # obtain the linkages array
@@ -254,7 +253,6 @@ def cluster_red(df,var_thresh=10,distance_thresh=0.5):
     distances = 1 - corr.abs().values  # pairwise distnces
 
     distArray = ssd.squareform(distances)  # scipy converts matrix to 1d array
-    # print(max(distArray))
     hier = hierarchy.linkage(distArray, method='average')  
     hier[hier<0] = 0
 
@@ -275,9 +273,6 @@ def cluster_red(df,var_thresh=10,distance_thresh=0.5):
 
     cluster_labels = hierarchy.fcluster(hier, distance_thresh, criterion="distance")
     num = len(np.unique(cluster_labels))
-    
-    # print('Number of clusters: {}'.format(num))
-    # print('Distance threshold: {}'.format(distance_thresh))
 
     kmeds = KMedoids(n_clusters=num,init='k-medoids++',max_iter=300,random_state=0)  # method='pam'
     kmeds.fit(corr)
@@ -308,57 +303,57 @@ def remove_outliers(data, threshold=3.5):
         return modified_z_score <= threshold
 
 
-def mixed_response(df,ids,tr):
+# def mixed_response(df,ids,tr):
     
-    # define variables of interest
-    resp = []
-    prog = []
-    mixed_resp = []
-    only_resp = []
-    only_prog = []
-    ids_chg = []
+#     # define variables of interest
+#     resp = []
+#     prog = []
+#     mixed_resp = []
+#     only_resp = []
+#     only_prog = []
+#     ids_chg = []
 
-    # check individual lesion responses for each patient
-    for i in ids:
+#     # check individual lesion responses for each patient
+#     for i in ids:
         
-        inds = np.where(df.ID == i)[0]
-        vals = df.deltaV[inds].values
-        resp.append((vals<=tr).any())
-        prog.append((vals>tr).any())
-        ids_chg.append(i.replace('SAR_5SAR2','SARC'))
+#         inds = np.where(df.ID == i)[0]
+#         vals = df.deltaV[inds].values
+#         resp.append((vals<=tr).any())
+#         prog.append((vals>tr).any())
+#         ids_chg.append(i.replace('SAR_5SAR2','SARC'))
 
-        mixed_resp.append(np.logical_and(resp[-1],prog[-1]))
-        only_resp.append(np.logical_and(resp[-1],~prog[-1]))
-        only_prog.append(np.logical_and(~resp[-1],prog[-1]))
+#         mixed_resp.append(np.logical_and(resp[-1],prog[-1]))
+#         only_resp.append(np.logical_and(resp[-1],~prog[-1]))
+#         only_prog.append(np.logical_and(~resp[-1],prog[-1]))
         
-    df_mixed = pd.DataFrame(data=[ids_chg,only_resp,only_prog,mixed_resp]).T
-    df_mixed.columns = ['USUBJID','AR-volume-'+str(tr),'NR-volume-'+str(tr),'MR-volume-'+str(tr)]
+#     df_mixed = pd.DataFrame(data=[ids_chg,only_resp,only_prog,mixed_resp]).T
+#     df_mixed.columns = ['USUBJID','AR-volume-'+str(tr),'NR-volume-'+str(tr),'MR-volume-'+str(tr)]
 
-    return df_mixed
+#     return df_mixed
 
-def mixed_response_categorical(df,ids,tr):
+# def mixed_response_categorical(df,ids,tr):
     
-    # define variables of interest
-    mr = []
+#     # define variables of interest
+#     mr = []
 
-    # check individual lesion responses for each patient
-    for i in ids:
+#     # check individual lesion responses for each patient
+#     for i in ids:
         
-        inds = np.where(df.ID == i)[0]
-        vals = df.deltaV[inds].values
-        resp = (vals<=tr).any()
-        prog = (vals>tr).any()
-        if np.logical_and(resp,prog):
-            mr.append('MR')
-        if np.logical_and(resp,~prog):
-            mr.append('AR')
-        if np.logical_and(~resp,prog):
-            mr.append('NR')
+#         inds = np.where(df.ID == i)[0]
+#         vals = df.deltaV[inds].values
+#         resp = (vals<=tr).any()
+#         prog = (vals>tr).any()
+#         if np.logical_and(resp,prog):
+#             mr.append('MR')
+#         if np.logical_and(resp,~prog):
+#             mr.append('AR')
+#         if np.logical_and(~resp,prog):
+#             mr.append('NR')
         
-    df_mixed = pd.DataFrame(data=[ids,mr]).T
-    df_mixed.columns = ['USUBJID','Volume-'+str(tr)]
+#     df_mixed = pd.DataFrame(data=[ids,mr]).T
+#     df_mixed.columns = ['USUBJID','Volume-'+str(tr)]
 
-    return df_mixed
+#     return df_mixed
 
 
 def define_pairs(select='categorical'):

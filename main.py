@@ -15,12 +15,7 @@ import seaborn as sns
 # import statannotations
 from statannotations.Annotator import Annotator
 from sklearn.pipeline import make_pipeline
-from sklearn.linear_model import LogisticRegression, SGDClassifier, LinearRegression
-from sklearn.linear_model import ElasticNet, Lasso, Ridge
-from sklearn.naive_bayes import GaussianNB
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
-from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
 from sklearn.feature_selection import SelectKBest, f_regression, f_classif, mutual_info_classif, chi2
 from sklearn.model_selection import RepeatedStratifiedKFold, cross_val_score
 from sklearn.model_selection import permutation_test_score
@@ -136,10 +131,6 @@ Output:
 '''
 
 inds_noOutliers,baselineVolume,deltaV_abs,deltaV_perc = f.volume_change_filtering(radiomics_bl,radiomics_c2,3)
-print('No. Lesions: {} ({} on exp. arm)'.format(np.sum(inds_noOutliers),np.sum(baseline.ARM[inds_noOutliers])))
-print('Min Volume: {} cc'.format(np.min(baselineVolume[inds_noOutliers])))
-print('Max Volume: {} cc'.format(np.max(baselineVolume[inds_noOutliers])))
-# del(radiomics_c2)
 
 # %% COMPARE SIMPLE METRICS FOR RESPONSE CATEGORIES
 
@@ -248,7 +239,6 @@ target_choice = deltaVbin         # deltaVbin, deltaVcat, delatV_perc
 
 print('Ta(low) = {} cc'.format(vol_low))
 print('Ta(high) = {} cc'.format(vol_high))
-print('Force Volume: {}'.format(force_volume))
 print('Model used: {}'.format(model_choice))
 if arm == 0:
     print('Trial Arm: Doxorubicin monotherapy')
