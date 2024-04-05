@@ -10,9 +10,9 @@ os.chdir(os.path.dirname(__file__))
 import scripts.functionals as f
 import pandas as pd, numpy as np, matplotlib.pyplot as plt
 import matplotlib
-# from sklearn.preprocessing import StandardScaler
-import seaborn as sns
+
 # import statannotations
+import seaborn as sns
 from statannotations.Annotator import Annotator
 from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LogisticRegression
