@@ -1,0 +1,622 @@
+﻿USUBJID,age,age category,SEX,ETHNIC,RACE,STRAT3,ECOG Performance Status,Extent of disease,Highest histologic grade,Histologic classification,Prior radiotherapy,Prior Adjuvant/Neo-adjuvant Systemic,Baseline LVEF,ARM
+SAR_5SAR2_112001,73,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,72,0
+SAR_5SAR2_112002,37,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,53,1
+SAR_5SAR2_112003,46,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_112004,78,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_112005,33,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,56,0
+SAR_5SAR2_112006,58,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,56.7,0
+SAR_5SAR2_113001,74,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,74.3,1
+SAR_5SAR2_113002,71,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,Y,52,0
+SAR_5SAR2_113003,76,>=65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,73,0
+SAR_5SAR2_113004,69,>=65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,72,1
+SAR_5SAR2_113005,58,<65,M,NOT HISPANIC OR LATINO,AMERICAN INDIAN OR ALASKA NATIVE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,73,0
+SAR_5SAR2_113006,44,<65,F,NOT HISPANIC OR LATINO,AMERICAN INDIAN OR ALASKA NATIVE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,61,0
+SAR_5SAR2_113007,69,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,55,1
+SAR_5SAR2_113008,66,>=65,M,HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70,1
+SAR_5SAR2_113009,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,55,0
+SAR_5SAR2_113010,59,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_113011,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_113012,42,<65,M,NOT HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_182001,34,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,55,1
+SAR_5SAR2_182002,59,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,56.6,1
+SAR_5SAR2_182003,45,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,54.9,0
+SAR_5SAR2_182004,48,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,Y,57.9,0
+SAR_5SAR2_182005,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,69.6,0
+SAR_5SAR2_182006,62,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,52.3,1
+SAR_5SAR2_182007,69,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_182008,31,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_182009,60,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65.7,0
+SAR_5SAR2_182010,42,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_182011,51,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_182012,34,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_182013,64,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,64.3,1
+SAR_5SAR2_182014,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,69,1
+SAR_5SAR2_182015,55,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,60,0
+SAR_5SAR2_182016,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,60,0
+SAR_5SAR2_182017,71,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,Y,73,0
+SAR_5SAR2_191001,27,<65,M,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,64,1
+SAR_5SAR2_191002,51,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,57,0
+SAR_5SAR2_191003,43,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,55,0
+SAR_5SAR2_191004,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_191005,69,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,71,1
+SAR_5SAR2_191006,47,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_191007,30,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,51,1
+SAR_5SAR2_191008,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,61,0
+SAR_5SAR2_191009,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,71,1
+SAR_5SAR2_191010,69,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,66,1
+SAR_5SAR2_191011,26,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,70,1
+SAR_5SAR2_191012,71,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,67,0
+SAR_5SAR2_191013,58,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,70,0
+SAR_5SAR2_191014,53,<65,M,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_191015,70,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,55,0
+SAR_5SAR2_191016,48,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,69,1
+SAR_5SAR2_191017,69,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,68,0
+SAR_5SAR2_191018,81,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_191019,41,<65,M,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_191020,49,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_191021,58,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,64,0
+SAR_5SAR2_191022,61,<65,F,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_191023,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,70,1
+SAR_5SAR2_191024,60,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,Y,63,1
+SAR_5SAR2_191025,50,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,Y,64,0
+SAR_5SAR2_191026,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,71,1
+SAR_5SAR2_191027,48,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,76,0
+SAR_5SAR2_191029,64,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,67,1
+SAR_5SAR2_191030,46,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,63,0
+SAR_5SAR2_193001,59,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_193002,51,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,60,1
+SAR_5SAR2_193003,55,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_193004,72,>=65,M,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_193005,64,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,60,1
+SAR_5SAR2_193006,75,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_193007,63,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,51,1
+SAR_5SAR2_194001,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,Y,55,1
+SAR_5SAR2_194002,54,<65,M,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_194003,52,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,57,1
+SAR_5SAR2_194004,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_194005,41,<65,F,HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,55,0
+SAR_5SAR2_194006,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,62,0
+SAR_5SAR2_194007,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,70,1
+SAR_5SAR2_194008,54,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,Y,67,0
+SAR_5SAR2_194009,49,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_194010,47,<65,M,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_194011,52,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,61.6,0
+SAR_5SAR2_194012,35,<65,F,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,67,1
+SAR_5SAR2_194013,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,69,1
+SAR_5SAR2_194014,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,61,1
+SAR_5SAR2_194015,63,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,62,0
+SAR_5SAR2_194016,74,>=65,M,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,60,1
+SAR_5SAR2_194017,76,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,64,1
+SAR_5SAR2_194018,55,<65,M,HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,67,0
+SAR_5SAR2_194019,54,<65,F,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_194020,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,55,0
+SAR_5SAR2_194021,47,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_194022,32,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_194023,36,<65,F,HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,64,1
+SAR_5SAR2_194024,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,67.6,1
+SAR_5SAR2_194025,56,<65,M,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,Prior Radiotherapy,N,59,0
+SAR_5SAR2_194026,62,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_198001,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,56,0
+SAR_5SAR2_198002,64,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Liposarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_198003,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,56,1
+SAR_5SAR2_198004,50,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,57,0
+SAR_5SAR2_198005,43,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,55,0
+SAR_5SAR2_198006,45,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,55,1
+SAR_5SAR2_198007,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,58,1
+SAR_5SAR2_198008,70,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,55,0
+SAR_5SAR2_198009,67,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,65,0
+SAR_5SAR2_198010,27,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,58,1
+SAR_5SAR2_198011,39,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,55,0
+SAR_5SAR2_198012,54,<65,M,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,51,0
+SAR_5SAR2_198014,67,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,55,1
+SAR_5SAR2_198015,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,56,0
+SAR_5SAR2_199001,55,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_199002,74,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_200001,49,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Liposarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_200002,79,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_200003,54,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,55,0
+SAR_5SAR2_200004,44,<65,M,HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_200006,82,>=65,M,NOT HISPANIC OR LATINO,ASIAN,Continuous,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,62,0
+SAR_5SAR2_200007,77,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_200008,50,<65,F,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_200009,59,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_200010,24,<65,M,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Continuous,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Other,No Prior Radiotherapy,N,55,1
+SAR_5SAR2_200012,72,>=65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,50,0
+SAR_5SAR2_200013,57,<65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_200014,24,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_200015,51,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Other,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_217001,26,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,72,0
+SAR_5SAR2_217002,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,60,1
+SAR_5SAR2_217003,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,60,1
+SAR_5SAR2_219001,72,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_219002,74,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,57,0
+SAR_5SAR2_219003,32,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,67,1
+SAR_5SAR2_219004,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,62,0
+SAR_5SAR2_219005,37,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,57,1
+SAR_5SAR2_219007,63,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,61,1
+SAR_5SAR2_219008,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,No Prior Radiotherapy,N,64,0
+SAR_5SAR2_219009,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,61,0
+SAR_5SAR2_219010,32,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,57,1
+SAR_5SAR2_219011,84,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Liposarcoma,Prior Radiotherapy,N,61,0
+SAR_5SAR2_219012,74,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,Y,67,0
+SAR_5SAR2_225001,62,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_225002,76,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_225003,62,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,70,1
+SAR_5SAR2_225004,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,60,0
+SAR_5SAR2_225005,70,>=65,M,NOT HISPANIC OR LATINO,ASIAN,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,55,1
+SAR_5SAR2_225006,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,55,1
+SAR_5SAR2_225007,70,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,60,0
+SAR_5SAR2_228001,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_228002,74,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,62,1
+SAR_5SAR2_228003,69,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,Y,60,0
+SAR_5SAR2_228004,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_228005,71,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,57,1
+SAR_5SAR2_228006,71,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,67,0
+SAR_5SAR2_228007,46,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,59,0
+SAR_5SAR2_228008,83,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_228009,51,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,62,1
+SAR_5SAR2_234001,58,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,60,1
+SAR_5SAR2_234002,63,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,60,1
+SAR_5SAR2_234003,66,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate/High,Other,Prior Radiotherapy,N,62,0
+SAR_5SAR2_234004,64,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,55,1
+SAR_5SAR2_234005,78,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate/High,Other,No Prior Radiotherapy,N,67,0
+SAR_5SAR2_294002,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,63,0
+SAR_5SAR2_294003,79,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,76,1
+SAR_5SAR2_294004,32,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,57,0
+SAR_5SAR2_294005,57,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,61,1
+SAR_5SAR2_294006,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,Y,60,0
+SAR_5SAR2_296001,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,70,0
+SAR_5SAR2_296002,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,60,1
+SAR_5SAR2_296003,69,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_297001,71,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,74,0
+SAR_5SAR2_297002,77,>=65,M,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,56,0
+SAR_5SAR2_297003,52,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,70,1
+SAR_5SAR2_297004,70,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,62,1
+SAR_5SAR2_297005,38,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,53,0
+SAR_5SAR2_297006,38,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_297007,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,67,0
+SAR_5SAR2_298001,48,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,52,0
+SAR_5SAR2_298002,56,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70.7,1
+SAR_5SAR2_298004,78,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_298005,54,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,67,0
+SAR_5SAR2_298006,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,71,1
+SAR_5SAR2_298007,43,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_298008,50,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,Prior Radiotherapy,N,63,0
+SAR_5SAR2_298010,43,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_298011,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,68,0
+SAR_5SAR2_298012,59,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,Prior Radiotherapy,N,72,1
+SAR_5SAR2_298013,69,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,76,0
+SAR_5SAR2_298014,47,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,63,1
+SAR_5SAR2_298015,40,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,62,1
+SAR_5SAR2_298016,58,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,65,0
+SAR_5SAR2_298017,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_298018,66,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_298019,48,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,64,0
+SAR_5SAR2_298020,57,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,58,0
+SAR_5SAR2_298021,26,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,Y,59,0
+SAR_5SAR2_298022,64,<65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,59,1
+SAR_5SAR2_298023,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,68,1
+SAR_5SAR2_298024,60,<65,F,NOT HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,69,0
+SAR_5SAR2_298025,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,58,1
+SAR_5SAR2_298026,54,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_298027,52,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_298028,57,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,68,1
+SAR_5SAR2_298029,53,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,58,0
+SAR_5SAR2_298030,54,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,55,1
+SAR_5SAR2_298031,72,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,67.1,1
+SAR_5SAR2_298032,76,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,73,0
+SAR_5SAR2_298033,66,>=65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,72,0
+SAR_5SAR2_298034,56,<65,M,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_298035,57,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,55,1
+SAR_5SAR2_298036,63,<65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,67,1
+SAR_5SAR2_298037,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63,0
+SAR_5SAR2_298038,66,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63,0
+SAR_5SAR2_298039,69,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_298040,58,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,66,1
+SAR_5SAR2_298041,24,<65,M,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,64,0
+SAR_5SAR2_298042,67,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,66,1
+SAR_5SAR2_298043,50,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,65,1
+SAR_5SAR2_298044,78,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,71,0
+SAR_5SAR2_298045,70,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,67,0
+SAR_5SAR2_299001,72,>=65,M,HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,52,0
+SAR_5SAR2_299002,51,<65,M,HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_299003,53,<65,M,HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,65,0
+SAR_5SAR2_299004,65,>=65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_319001,41,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,Y,58,1
+SAR_5SAR2_319002,68,>=65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,61,0
+SAR_5SAR2_319003,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,65,1
+SAR_5SAR2_319004,81,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,67,1
+SAR_5SAR2_319005,71,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,53,1
+SAR_5SAR2_320001,51,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Locally Advanced,High Grade,Other,Prior Radiotherapy,N,58,0
+SAR_5SAR2_320002,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Locally Advanced,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,69,1
+SAR_5SAR2_320004,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,67,1
+SAR_5SAR2_320005,51,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,77,0
+SAR_5SAR2_320006,58,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,72,0
+SAR_5SAR2_320007,48,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_320008,72,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,71,0
+SAR_5SAR2_320009,71,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,62,1
+SAR_5SAR2_320010,67,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Locally Advanced,High Grade,Liposarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_320011,74,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_320012,77,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,68,1
+SAR_5SAR2_320013,78,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,70,1
+SAR_5SAR2_320014,70,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,Y,71,0
+SAR_5SAR2_320015,68,>=65,F,HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,73,0
+SAR_5SAR2_320016,62,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_320017,62,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_320018,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_320019,70,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,Y,70,1
+SAR_5SAR2_321001,58,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_321002,55,<65,M,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,62,0
+SAR_5SAR2_321003,41,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,63,1
+SAR_5SAR2_321004,56,<65,F,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,Y,70,1
+SAR_5SAR2_321005,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,58,1
+SAR_5SAR2_321006,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_321007,36,<65,M,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,61,0
+SAR_5SAR2_321008,36,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_321009,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate/High,Other,Prior Radiotherapy,N,60,0
+SAR_5SAR2_321010,63,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,73,1
+SAR_5SAR2_321011,45,<65,F,NOT HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_321012,63,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,60,0
+SAR_5SAR2_321013,72,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,56,0
+SAR_5SAR2_321014,52,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,61,1
+SAR_5SAR2_321015,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,50,0
+SAR_5SAR2_321016,44,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_321017,56,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,54,1
+SAR_5SAR2_321018,63,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_321019,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,Y,63,1
+SAR_5SAR2_321020,28,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,54,1
+SAR_5SAR2_321021,33,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate/High,Leiomyosarcoma,No Prior Radiotherapy,N,63,0
+SAR_5SAR2_321022,71,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,Intermediate Grade,Other,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_321023,51,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,57,1
+SAR_5SAR2_321024,89,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,70,1
+SAR_5SAR2_322001,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,67,0
+SAR_5SAR2_322002,46,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate/High,Other,No Prior Radiotherapy,N,68,1
+SAR_5SAR2_323001,42,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_326001,53,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,55,1
+SAR_5SAR2_326002,55,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,60,0
+SAR_5SAR2_326003,59,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_326004,58,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,55,1
+SAR_5SAR2_326005,50,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,50,1
+SAR_5SAR2_326006,58,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_326007,54,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Liposarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_326008,53,<65,M,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,52.5,0
+SAR_5SAR2_326009,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,55,1
+SAR_5SAR2_326010,40,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,55,0
+SAR_5SAR2_327001,48,<65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,75,0
+SAR_5SAR2_328001,29,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,73,1
+SAR_5SAR2_328002,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,65,0
+SAR_5SAR2_328003,73,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,66,1
+SAR_5SAR2_328004,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,75,0
+SAR_5SAR2_328005,56,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,58,0
+SAR_5SAR2_328006,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,68,1
+SAR_5SAR2_328008,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,69,0
+SAR_5SAR2_328009,39,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,69,0
+SAR_5SAR2_328010,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,52,1
+SAR_5SAR2_329001,69,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,60,1
+SAR_5SAR2_329002,60,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_329003,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_329004,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,57,0
+SAR_5SAR2_329005,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,61,0
+SAR_5SAR2_329006,60,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_329007,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_329008,33,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,62,0
+SAR_5SAR2_329009,48,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,59,1
+SAR_5SAR2_330002,72,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,55,0
+SAR_5SAR2_330003,76,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,56,1
+SAR_5SAR2_330004,58,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_330005,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_330006,74,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,78,1
+SAR_5SAR2_330007,49,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_330008,33,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,64,0
+SAR_5SAR2_330009,40,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate/High,Other,Prior Radiotherapy,N,62,0
+SAR_5SAR2_330010,64,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,57,0
+SAR_5SAR2_330011,60,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_330012,67,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,55,1
+SAR_5SAR2_330013,70,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,63,1
+SAR_5SAR2_330014,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_330015,78,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,73,0
+SAR_5SAR2_330016,56,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,61,0
+SAR_5SAR2_330017,33,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 0,Metastatic,Intermediate/High,Other,Prior Radiotherapy,N,65,1
+SAR_5SAR2_330018,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_330019,73,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_330020,58,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate/High,Liposarcoma,Prior Radiotherapy,N,67,1
+SAR_5SAR2_330021,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,59,0
+SAR_5SAR2_330022,75,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,Y,65,1
+SAR_5SAR2_330023,79,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,69,0
+SAR_5SAR2_330024,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,64,0
+SAR_5SAR2_330025,58,<65,F,NOT HISPANIC OR LATINO,ASIAN,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_330026,69,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,Y,74,0
+SAR_5SAR2_330027,41,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,63,0
+SAR_5SAR2_330028,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,58,1
+SAR_5SAR2_330029,62,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,51,1
+SAR_5SAR2_331002,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,58,1
+SAR_5SAR2_331003,69,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_331004,29,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,50,0
+SAR_5SAR2_331006,20,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_331007,78,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_331008,48,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_331009,63,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,65,0
+SAR_5SAR2_331010,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,63,0
+SAR_5SAR2_331011,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,60,1
+SAR_5SAR2_332001,31,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,60,0
+SAR_5SAR2_332002,71,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_332003,79,>=65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_332004,62,<65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_335001,73,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,55,0
+SAR_5SAR2_335002,55,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,57,1
+SAR_5SAR2_336001,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,66,1
+SAR_5SAR2_336002,45,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,67,1
+SAR_5SAR2_336003,51,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,53,0
+SAR_5SAR2_336004,73,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,Y,65,0
+SAR_5SAR2_336005,36,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,No Prior Radiotherapy,N,61.6,1
+SAR_5SAR2_337002,70,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,79,1
+SAR_5SAR2_337003,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,Y,59,1
+SAR_5SAR2_337004,71,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,59,0
+SAR_5SAR2_338001,71,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,61.4,1
+SAR_5SAR2_338002,70,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,56.2,0
+SAR_5SAR2_338003,71,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70.4,1
+SAR_5SAR2_338004,45,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_338005,54,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Other,No Prior Radiotherapy,N,69,0
+SAR_5SAR2_339001,70,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,61,1
+SAR_5SAR2_340001,32,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,55,1
+SAR_5SAR2_341001,39,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,55,1
+SAR_5SAR2_341002,74,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_342001,56,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate/High,Leiomyosarcoma,Prior Radiotherapy,Y,60,0
+SAR_5SAR2_342002,67,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_343001,48,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,58,0
+SAR_5SAR2_344001,73,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_344002,62,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,60,1
+SAR_5SAR2_344003,73,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,55,0
+SAR_5SAR2_344004,45,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_408001,76,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_408002,45,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70,1
+SAR_5SAR2_409001,51,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,66,1
+SAR_5SAR2_409002,78,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,51,1
+SAR_5SAR2_409003,59,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,61,0
+SAR_5SAR2_409004,67,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,59,0
+SAR_5SAR2_409005,73,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,61,0
+SAR_5SAR2_409006,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,69,1
+SAR_5SAR2_409007,77,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,64,0
+SAR_5SAR2_409008,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,54,1
+SAR_5SAR2_411001,63,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,62,1
+SAR_5SAR2_411002,45,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63,0
+SAR_5SAR2_411003,41,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,71,0
+SAR_5SAR2_411004,49,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_411005,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,67,1
+SAR_5SAR2_411006,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,60,1
+SAR_5SAR2_411007,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,62,0
+SAR_5SAR2_411008,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_411009,47,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate/High,Other,No Prior Radiotherapy,N,69,0
+SAR_5SAR2_412001,73,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,64.2,0
+SAR_5SAR2_412002,46,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,68,1
+SAR_5SAR2_412003,73,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,63,0
+SAR_5SAR2_412004,41,<65,F,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_413001,34,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,60,0
+SAR_5SAR2_413002,61,<65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,59.4,1
+SAR_5SAR2_468001,48,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_468002,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate/High,Leiomyosarcoma,No Prior Radiotherapy,N,67,1
+SAR_5SAR2_468003,58,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,59,0
+SAR_5SAR2_468004,53,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,57,1
+SAR_5SAR2_468005,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Other,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_469001,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_469002,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,50,1
+SAR_5SAR2_469003,59,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_469004,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,73,1
+SAR_5SAR2_469005,60,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,75,1
+SAR_5SAR2_469006,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,62,0
+SAR_5SAR2_469007,51,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_469008,44,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,69,1
+SAR_5SAR2_469009,44,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_469010,59,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Locally Advanced,Intermediate Grade,Other,No Prior Radiotherapy,N,61,0
+SAR_5SAR2_469011,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,51,0
+SAR_5SAR2_469013,71,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_469014,81,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,64,0
+SAR_5SAR2_469015,59,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,72,1
+SAR_5SAR2_469016,49,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_469017,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_469018,69,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,71,0
+SAR_5SAR2_469019,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_469020,52,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,75,1
+SAR_5SAR2_469022,50,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,61,1
+SAR_5SAR2_469023,22,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,57,0
+SAR_5SAR2_469024,76,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_469025,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_469026,37,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,73,0
+SAR_5SAR2_469027,41,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,68,1
+SAR_5SAR2_469028,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,64,0
+SAR_5SAR2_469029,50,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,59,0
+SAR_5SAR2_469030,37,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,67,0
+SAR_5SAR2_469031,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,71,1
+SAR_5SAR2_469032,45,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,68,1
+SAR_5SAR2_469033,36,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_469034,66,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,53,0
+SAR_5SAR2_471001,74,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,66,1
+SAR_5SAR2_471002,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,60,0
+SAR_5SAR2_471003,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,52,1
+SAR_5SAR2_471004,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,53,1
+SAR_5SAR2_471005,37,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,55,0
+SAR_5SAR2_471006,25,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,60,0
+SAR_5SAR2_471007,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,64,0
+SAR_5SAR2_471008,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,54,1
+SAR_5SAR2_471009,25,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,68,0
+SAR_5SAR2_471010,71,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,58,1
+SAR_5SAR2_471011,63,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,75,0
+SAR_5SAR2_471012,53,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_471013,46,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,66,1
+SAR_5SAR2_471014,64,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_471015,62,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,Prior Radiotherapy,N,66,0
+SAR_5SAR2_471016,48,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,58,0
+SAR_5SAR2_471017,69,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_471018,41,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_471019,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,60,0
+SAR_5SAR2_471020,48,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,65,1
+SAR_5SAR2_471021,67,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Other,Prior Radiotherapy,N,60,0
+SAR_5SAR2_471022,34,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_471023,37,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_471025,33,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_471026,60,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,72,1
+SAR_5SAR2_471027,66,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,60,0
+SAR_5SAR2_506001,58,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,65,1
+SAR_5SAR2_506002,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70,0
+SAR_5SAR2_507001,69,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,No Prior Radiotherapy,N,61,0
+SAR_5SAR2_507002,72,>=65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,71,1
+SAR_5SAR2_507003,51,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Other,No Prior Radiotherapy,N,72,0
+SAR_5SAR2_507004,42,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_507005,67,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,70,1
+SAR_5SAR2_507006,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,Y,61,0
+SAR_5SAR2_507007,51,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_507008,67,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,,0
+SAR_5SAR2_507009,67,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,69,1
+SAR_5SAR2_507010,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,62,0
+SAR_5SAR2_507011,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,51,0
+SAR_5SAR2_507012,45,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,57,1
+SAR_5SAR2_509001,70,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,74,0
+SAR_5SAR2_509002,62,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,54,1
+SAR_5SAR2_509003,75,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,78,0
+SAR_5SAR2_509004,70,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,73,1
+SAR_5SAR2_509005,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,59,1
+SAR_5SAR2_509006,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,71,1
+SAR_5SAR2_511001,62,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,64,0
+SAR_5SAR2_511002,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_511003,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,59,0
+SAR_5SAR2_511004,34,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,58,1
+SAR_5SAR2_511005,67,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_511006,39,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,No Prior Radiotherapy,N,61,1
+SAR_5SAR2_511007,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_511008,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_511009,38,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,55,1
+SAR_5SAR2_511010,79,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_511011,52,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,55,0
+SAR_5SAR2_511012,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,64,0
+SAR_5SAR2_511013,73,>=65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,Prior Radiotherapy,N,70,1
+SAR_5SAR2_512001,56,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,54,1
+SAR_5SAR2_512002,49,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,71,0
+SAR_5SAR2_512003,39,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Low Grade,Liposarcoma,No Prior Radiotherapy,N,58,0
+SAR_5SAR2_512004,72,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,57,0
+SAR_5SAR2_513001,63,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,59,1
+SAR_5SAR2_584001,35,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65.6,1
+SAR_5SAR2_584002,34,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,74,0
+SAR_5SAR2_584003,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,60,0
+SAR_5SAR2_584004,52,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,67,0
+SAR_5SAR2_584005,32,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,66,1
+SAR_5SAR2_584006,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,67,1
+SAR_5SAR2_584007,49,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_584008,47,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,72,0
+SAR_5SAR2_585001,31,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,59,1
+SAR_5SAR2_585002,51,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,67,0
+SAR_5SAR2_587001,44,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,58,1
+SAR_5SAR2_587002,47,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,56,0
+SAR_5SAR2_587003,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,60,1
+SAR_5SAR2_587004,55,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_587005,41,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_587006,41,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,64,0
+SAR_5SAR2_617001,49,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,68.2,1
+SAR_5SAR2_619001,51,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,68,0
+SAR_5SAR2_619002,60,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,,1
+SAR_5SAR2_619003,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,64,0
+SAR_5SAR2_619004,70,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,72,1
+SAR_5SAR2_619005,62,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,62,0
+SAR_5SAR2_619006,53,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,68,1
+SAR_5SAR2_619007,76,>=65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_619008,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_619009,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_619010,44,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,No Prior Radiotherapy,N,63,0
+SAR_5SAR2_619011,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63,0
+SAR_5SAR2_619012,34,<65,M,NOT HISPANIC OR LATINO,WHITE,Continuous,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,62,0
+SAR_5SAR2_680001,74,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_680002,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,66,1
+SAR_5SAR2_680003,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate/High,Liposarcoma,No Prior Radiotherapy,N,58,1
+SAR_5SAR2_680005,50,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_680006,32,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate/High,Other,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_682001,56,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63,1
+SAR_5SAR2_682002,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,54.9,0
+SAR_5SAR2_682003,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,51.8,1
+SAR_5SAR2_682004,60,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,84.2,0
+SAR_5SAR2_682005,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,63.4,0
+SAR_5SAR2_682006,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70,1
+SAR_5SAR2_682007,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,57,1
+SAR_5SAR2_683001,77,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,59,1
+SAR_5SAR2_683002,43,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,58,0
+SAR_5SAR2_683003,51,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,59,1
+SAR_5SAR2_683004,63,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_683005,62,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate/High,Other,Prior Radiotherapy,N,50,0
+SAR_5SAR2_683006,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_683007,75,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,57,1
+SAR_5SAR2_685001,44,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_685002,49,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,50,0
+SAR_5SAR2_685003,69,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_685004,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,Y,70,1
+SAR_5SAR2_685005,44,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,70,1
+SAR_5SAR2_685006,66,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,68,1
+SAR_5SAR2_685007,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,74,0
+SAR_5SAR2_685008,38,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,55,1
+SAR_5SAR2_685009,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,55,0
+SAR_5SAR2_685010,29,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,Y,57,1
+SAR_5SAR2_685011,53,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,57,0
+SAR_5SAR2_685012,45,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_686001,60,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_686002,71,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_687001,57,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,78,1
+SAR_5SAR2_722001,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,74,1
+SAR_5SAR2_722002,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,68,0
+SAR_5SAR2_722003,40,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,69,0
+SAR_5SAR2_722004,57,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,68,0
+SAR_5SAR2_722005,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Liposarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_722006,50,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,67,1
+SAR_5SAR2_722007,46,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_722008,37,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,67,1
+SAR_5SAR2_723001,62,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Liposarcoma,Prior Radiotherapy,N,72,0
+SAR_5SAR2_723002,61,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,70,1
+SAR_5SAR2_723003,57,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,,0
+SAR_5SAR2_723004,35,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate/High,Other,No Prior Radiotherapy,N,72,0
+SAR_5SAR2_724001,61,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_781001,68,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,Prior Radiotherapy,N,61,0
+SAR_5SAR2_781002,53,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,81,1
+SAR_5SAR2_781003,60,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,71,1
+SAR_5SAR2_781004,45,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,59,0
+SAR_5SAR2_781005,53,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,55,0
+SAR_5SAR2_781006,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_781007,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,62,0
+SAR_5SAR2_781008,50,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Other,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_781009,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,62,1
+SAR_5SAR2_781010,51,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,69,0
+SAR_5SAR2_781011,55,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,Intermediate Grade,Liposarcoma,No Prior Radiotherapy,N,64,1
+SAR_5SAR2_781012,43,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,73,1
+SAR_5SAR2_781013,48,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_781014,48,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,65,0
+SAR_5SAR2_841001,49,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,73.8,0
+SAR_5SAR2_841002,72,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,Intermediate Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,65,0
+SAR_5SAR2_841003,44,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_842001,44,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate/High,Other,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_842002,59,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Locally Advanced,High Grade,Other,No Prior Radiotherapy,N,60,0
+SAR_5SAR2_842003,64,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,60,1
+SAR_5SAR2_858001,56,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,68,1
+SAR_5SAR2_858002,64,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Locally Advanced,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,68,0
+SAR_5SAR2_858003,62,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,66,0
+SAR_5SAR2_858004,68,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Leiomyosarcoma,No Prior Radiotherapy,N,55,1
+SAR_5SAR2_858005,73,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,75,0
+SAR_5SAR2_858006,66,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_858007,47,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,52,1
+SAR_5SAR2_967001,67,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,61,0
+SAR_5SAR2_967002,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,No Prior Radiotherapy,N,65,1
+SAR_5SAR2_967003,51,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,Prior Radiotherapy,N,65,0
+SAR_5SAR2_967004,54,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,75,1
+SAR_5SAR2_967005,48,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,57,1
+SAR_5SAR2_967006,35,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Other,No Prior Radiotherapy,N,83,0
+SAR_5SAR2_967007,78,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,72,1
+SAR_5SAR2_967008,69,>=65,M,NOT HISPANIC OR LATINO,OTHER,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,No Prior Radiotherapy,N,62,0
+SAR_5SAR2_967009,52,<65,M,NOT HISPANIC OR LATINO,AMERICAN INDIAN OR ALASKA NATIVE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Liposarcoma,Prior Radiotherapy,N,67,0
+SAR_5SAR2_968001,53,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,58,0
+SAR_5SAR2_969001,39,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,67,0
+SAR_5SAR2_969002,71,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Undifferentiated Pleomorphic Sarcoma,Prior Radiotherapy,N,65,1
+SAR_5SAR2_969003,65,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,58,0
+SAR_5SAR2_971001,47,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,N,67.7,1
+SAR_5SAR2_971002,65,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,No Prior Radiotherapy,Y,64.7,1
+SAR_5SAR2_971003,70,>=65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,Unknown,Other,No Prior Radiotherapy,N,67,0
+SAR_5SAR2_972001,42,<65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,58,0
+SAR_5SAR2_972002,48,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,52,1
+SAR_5SAR2_972003,50,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,No Prior Radiotherapy,N,56,1
+SAR_5SAR2_973001,31,<65,M,HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Other,Prior Radiotherapy,N,63,1
+SAR_5SAR2_975001,70,>=65,F,NOT HISPANIC OR LATINO,BLACK OR AFRICAN AMERICAN,Bolus,Baseline ECOG 1/2,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,N,55,0
+SAR_5SAR2_976001,67,>=65,M,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 1/2,Metastatic,High Grade,Leiomyosarcoma,Prior Radiotherapy,N,68,1
+SAR_5SAR2_976002,58,<65,F,NOT HISPANIC OR LATINO,WHITE,Bolus,Baseline ECOG 0,Metastatic,Intermediate Grade,Other,Prior Radiotherapy,Y,64,0
