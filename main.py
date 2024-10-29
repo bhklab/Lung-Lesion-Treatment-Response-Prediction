@@ -80,6 +80,23 @@ features_to_remove = f.stability_feature_reduction(path_to_features)
 
 del(path_to_features)
 
+# %% CLEAN UPDATED DF WITH PERITUMORAL FEATURES
+
+df = pd.read_csv('data/radiomics-peritumoral-allSTS.csv')
+
+# if 'Unnamed: 0' in df.columns:
+#     df = df.drop('Unnamed: 0',axis=1)
+
+# if 'Location' in df.columns:
+#     print('Location column already exists')  
+#     # move 'Location column to index 1
+#     cols = list(df.columns)
+#     cols.insert(1, cols.pop(cols.index('Location')))
+#     df = df.loc[:, cols]
+# # lesion_names = [i.split('/')[-1].split('-')[0] for i in df.Mask]
+# # df['Location'] = lesion_names
+# df.to_csv('data/radiomics-peritumoral-allSTS.csv',index=False)
+
 # %% READ AND ORGANIZE DATA
 
 '''
@@ -109,6 +126,7 @@ Output:
 '''
 
 path_to_radiomics = 'data/radiomics.csv'  
+# path_to_radiomics = 'data/radiomics-peritumoral-allSTS.csv'
 path_to_clinical = 'data/baseline.csv' 
 
 radiomics_bl,radiomics_c2,baseline = f.load_rfs(path_to_radiomics,path_to_clinical,features_to_remove)
