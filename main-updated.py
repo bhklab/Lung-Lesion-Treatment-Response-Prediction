@@ -34,6 +34,8 @@ matplotlib.rcParams.update({'font.size': 16})
 import warnings
 warnings.filterwarnings("ignore")  # "default" or "always" to turn back on
 from itertools import combinations
+from sklearn.utils import parallel_backend
+import textwrap
 
 # %% OPTIONAL (FOR PRESENTATIONS)
 
@@ -357,9 +359,9 @@ df = features_volcorr.copy()
 
 
 # modifiable arguments (preset for analysis)
-Tr = 50
+Tr = -33
 arm = 0
-max_features = 10
+max_features = 2
 splits = 10
 vol_low = 0
 vol_high = 1e10 # in cc
@@ -367,12 +369,12 @@ stats_testing = True
 
 # preset parameters
 # deltaVcat,deltaVbin = f.define_outcomes(deltaV_perc,Tr)
-deltaVbin = deltaV_perc < -Tr
+deltaVbin = deltaV_perc < Tr
 print('--------------------')
 print('Tr: {} %'.format(Tr))
 
 index_choice = 'arm' #'subset+'
-model_choice = 'kNN' # 'logistic', 'kNN', 'naivebayes'
+model_choice = 'naivebayes' # 'logistic', 'kNN', 'naivebayes', 'svm', 'randomforest'
 dat = 'imaging'
 target_choice = deltaVbin         # deltaVbin, deltaVcat, delatV_perc
 
@@ -507,19 +509,25 @@ for i in range(1,max_features+1):
         print('Wilcoxon p-value: ',wilcoxon(avg_precision,aps)[1])
         wilcoxp.append(wilcoxon(avg_precision,aps)[1])
     
-    scores_precision, perm_scores_precision, pvalue_precision = permutation_test_score(
-        clf, predictors.values, targets.astype('int'), scoring="matthews_corrcoef", cv=cv, n_permutations=1000
-    )
-    print('p-value: {:.3f}'.format(pvalue_precision))
-    print('FDR-corrected p-value: {:.3f}'.format(mtc(np.repeat(pvalue_precision,10))[1][0]))
-    fdr.append(mtc(np.repeat(pvalue_precision,10))[1][0])
+    # with parallel_backend('threading', n_jobs=-1):
+    #     scores_precision, perm_scores_precision, pvalue_precision = permutation_test_score(
+    #         clf, predictors.values, targets.astype('int'), scoring="matthews_corrcoef", cv=cv, n_permutations=1000
+    #     )
+#     print('p-value: {:.3f}'.format(pvalue_precision))
+#     print('FDR-corrected p-value: {:.3f}'.format(mtc(np.repeat(pvalue_precision,10))[1][0]))
+#     fdr.append(mtc(np.repeat(pvalue_precision,10))[1][0])
 
-    print('--------------------')
+#     print('--------------------')
     
-results_df = pd.DataFrame([auroc,auprc,mcc_lst,neg_log_loss,wilcoxp,fdr]).T
-results_df.columns = ['AUROC','AUPRC','MCC','NegLogLoss','Wilcoxon P-Value','FDR']
-results_df.index = range(1,max_features+1)
-print(results_df)
+# results_df = pd.DataFrame([auroc,auprc,mcc_lst,neg_log_loss,wilcoxp,fdr]).T
+# results_df.columns = ['AUROC','AUPRC','MCC','NegLogLoss','Wilcoxon P-Value','FDR']
+# results_df.index = range(1,max_features+1)
+# print(results_df)
+
+# Save the results to a log file
+# log_file_path = 'results/analysis_results.log'
+# with open(log_file_path, 'w') as log_file:
+#     log_file.write(results_df.to_string())
 
 # %% EXTRA FUNCTION (TESTING)
 
@@ -543,103 +551,52 @@ def isolateData(df,inds,featuresofInterest):
 import scripts.functionals2 as f2
 
 # indicate model of interest
-feature_choice = 'dox-prog33-all-naivebayes'
-model_choice = 'naivebayes'
+feature_choice = 'rfc-prog33-10features'
 df = features_volcorr.copy()
 
 Tr = 33
 outcomes = deltaV_perc > +Tr
 
 features = {
-            'dox-all'  : ['wavelet-LHL_firstorder_Variance_exterior rim', 
-                          'log-sigma-3-0-mm-3D_gldm_GrayLevelVariance_lesion core', 
-                          'volume'],
-            'dox-low'  : ['wavelet-LHL_firstorder_Variance_exterior rim', 
-                          'log-sigma-3-0-mm-3D_gldm_GrayLevelVariance_lesion core', 
-                          'log-sigma-3-0-mm-3D_firstorder_10Percentile_exterior rim', 
-                          'volume'],
-            'evo-all'  : ['logarithm_glcm_SumSquares_lesion core', 
-                          'log-sigma-4-0-mm-3D_gldm_GrayLevelVariance_interior rim', 
-                          'volume'],
-            'evo-low'  : ['wavelet-LLH_firstorder_Mean_lesion core', 
-                          'logarithm_firstorder_Mean_lesion core', 
-                          'wavelet-HHL_firstorder_Variance_lesion core', 
-                          'wavelet-LHL_glcm_ClusterTendency_lesion core', 
-                          'volume'],
-            'evo-high' : ['logarithm_glcm_SumSquares_lesion core', 
-                          'wavelet-HHL_firstorder_Variance_lesion core', 
-                          'wavelet-LHL_glcm_ClusterTendency_lesion core', 
-                          'logarithm_firstorder_Minimum_interior rim', 
-                          'volume'],
+            'knn-prog33-8features'  : ['wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
+            'knn-prog33-9features'  : ['wavelet-HHH_firstorder_Minimum_interior rim', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
+            'log-prog33-8features'  : ['wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
+            'log-prog33-9features'  : ['wavelet-HHH_firstorder_Minimum_interior rim', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
+            'rfc-resp25-6features'  : ['wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'square_firstorder_Variance_exterior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'gradient_glcm_SumSquares', 'original_shape_VoxelVolume'],
+            'rfc-prog25-7features'  : ['wavelet-HHH_firstorder_Minimum_interior rim', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'original_shape_VoxelVolume'],
+            'rfc-prog33-7features'  : ['wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
+            'rfc-prog33-10features' : ['wavelet-HHH_firstorder_Minimum_interior rim', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'gradient_glcm_ClusterTendency_exterior rim', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
 
-            'dox-resp33-all-logistic' : ['exponential_glszm_ZoneVariance', 
-                                         'wavelet-HHH_firstorder_Minimum_interior rim', 
-                                         'original_firstorder_MeanAbsoluteDeviation', 
-                                        'logarithm_firstorder_Variance_lesion core', 
-                                        'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 
-                                        'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 
-                                        'gradient_glcm_SumSquares', 
-                                        'original_shape_VoxelVolume'],
-            'dox-resp25-all-logistic' : ['exponential_glszm_ZoneVariance', 
-                                'wavelet-HHH_firstorder_Minimum_interior rim', 
-                                'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 
-                                'logarithm_firstorder_Variance_lesion core', 
-                                'square_firstorder_Variance_exterior rim', 
-                                'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 
-                                'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 
-                                'gradient_glcm_SumSquares', 
-                                'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_interior rim', 
-                                'original_shape_VoxelVolume'],
-            'dox-prog25-all-logistic' : ['original_glrlm_GrayLevelVariance_lesion core', 
-                                'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 
-                                'original_shape_VoxelVolume'],
-            'dox-prog33-all-logistic' : ['original_glrlm_GrayLevelVariance_lesion core', 
-                                         'original_shape_VoxelVolume'],
-            'dox-prog33-all-naivebayes' : ['wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume']
             }
 
-params = {
-            'dox-all'  : {'max_iter': 50, 'penalty': 'l1', 'solver': 'liblinear', 'tol': 0.0001, 'random_state': 1},
-            'dox-low'  : {'max_iter': 50, 'penalty': 'l1', 'solver': 'liblinear', 'tol': 0.0001, 'random_state': 1},
-            'evo-all'  : {'max_iter': 50, 'penalty': 'l1', 'solver': 'liblinear', 'tol': 0.0001, 'random_state': 1},
-            'evo-low'  : {'max_iter': 100, 'penalty': 'l2', 'solver': 'sag', 'tol': 0.0001, 'random_state': 1},
-            'evo-high' : {'max_iter': 50, 'penalty': 'l2', 'solver': 'newton-cg', 'tol': 0.0001, 'random_state': 1},
-            'dox-resp33-all-logistic' : {'max_iter': 50, 'penalty': 'l1', 'solver': 'liblinear', 'tol': 0.0001, 'random_state': 1},
-            'dox-resp25-all-logistic' : {'max_iter': 200, 'penalty': 'l2', 'solver': 'lbfgs', 'tol': 0.0001, 'random_state': 1},
-            'dox-prog25-all-logistic' :  {'max_iter': 50, 'penalty': 'l2', 'solver': 'lbfgs', 'tol': 0.0001, 'random_state': 1},
-            'dox-prog33-all-logistic' :  {'max_iter': 100, 'penalty': 'l2', 'solver': 'newton-cg', 'tol': 0.0001, 'random_state': 1}
+models = {
+            'knn-prog33-8features'  : KNeighborsClassifier(**{'metric': 'euclidean', 'n_neighbors': 11, 'weights': 'distance'}),
+            'knn-prog33-9features'  : KNeighborsClassifier(**{'metric': 'euclidean', 'n_neighbors': 11, 'weights': 'distance'}),
+            'log-prog33-8features'  : LogisticRegression(**{'max_iter': 50, 'penalty': 'l1', 'solver': 'liblinear', 'tol': 0.0001, 'random_state': 1}),
+            'log-prog33-9features'  : LogisticRegression(**{'max_iter': 50, 'penalty': 'l2', 'solver': 'lbfgs', 'tol': 0.0001, 'random_state': 1}),
+            'rfc-resp25-6features'  : RandomForestClassifier(**{'criterion': 'gini', 'max_depth': 10, 'max_features': 'sqrt', 'n_estimators': 300, 'random_state': 1}),
+            'rfc-prog25-7features'  : RandomForestClassifier(**{'criterion': 'entropy', 'max_depth': 10, 'max_features': 'sqrt', 'n_estimators': 400, 'random_state': 1}),
+            'rfc-prog33-7features'  : RandomForestClassifier(**{'criterion': 'gini', 'max_depth': 10, 'max_features': 'sqrt', 'n_estimators': 200, 'random_state': 1}),
+            'rfc-prog33-10features' : RandomForestClassifier(**{'criterion': 'gini', 'max_depth': 10, 'max_features': 'sqrt', 'n_estimators': 200, 'random_state': 1}),
+
             }
 
-# models = {
-#             'logistic'   : [LogisticRegression(random_state=1),{**params[feature_choice]}],
-#             'naivebayes' : [GaussianNB(),{}],
-#             'kNN'        : [KNeighborsClassifier(),{**params[feature_choice]}]
-# }
 
-# specify training data
-arm = 0
-vol_low = 0#16.05
-vol_high = 1600000000 # in cc e-3
-inds = np.where(np.logical_and(np.logical_and((baselineVolume<vol_high),(baselineVolume>vol_low)),(baseline['ARM']==arm)))[0]
+# specify training data (lesions that received doxorubicin monotherapy)
+doxinds = np.where(baseline['ARM']==0)[0]
+trainingFeatures = df[features[feature_choice]].iloc[doxinds,:]
+trainingTargets = outcomes[doxinds]
 
-# trainingFeatures,trainingTargets = isolateData(df,inds,features[feature_choice])
-trainingFeatures = df[features[feature_choice]].iloc[inds,:]
-trainingTargets = outcomes[inds]
-
-# specify testing data
-arm = 1
-vol_low = 0#16.05
-vol_high = 1600000000 # in cc e-3
-inds = np.where(np.logical_and(np.logical_and((baselineVolume<vol_high),(baselineVolume>vol_low)),(baseline['ARM']==arm)))[0]
-
-# testingFeatures,testingTargets = isolateData(df,inds,features[feature_choice])
-testingFeatures = df[features[feature_choice]].iloc[inds]
-testingTargets = outcomes[inds]
+# specify testing data (lesions that received TH-302 plus doxorubicin)
+evoinds = np.where(baseline['ARM']==1)[0]
+testingFeatures = df[features[feature_choice]].iloc[evoinds,:]
+testingTargets = outcomes[evoinds]
 
 # instantiate the model object
 # model = LogisticRegression(**params[feature_choice])
-model = GaussianNB()
-# model = models[model_choice][0]
+# model = GaussianNB()
+# model = KNeighborsClassifier(**params[feature_choice])
+model = models[feature_choice]
 
 model.fit(trainingFeatures,trainingTargets)
 
@@ -657,18 +614,91 @@ print('Predicted definitive and was definitive ',np.sum(np.logical_and(opp_predi
 print('Predicted definitive and NOT definitive',np.sum(np.logical_and(opp_predictions,~testingTargets)))
 print('Predicted NOT definitive and definitive',np.sum(np.logical_and(~opp_predictions,testingTargets)))
 print('Predicted NOT definitive and NOT definitive',np.sum(np.logical_and(~opp_predictions,~testingTargets)))
+# 
 
-#DOXlesionsOfInterest = radiomics_bl.copy().iloc[radiomics_bl.index[inds][np.where(np.logical_and(opp_predictions,~testingTargets))[0]]]
-#DOXbaselineInfoOfInterest = baseline.copy().iloc[radiomics_bl.index[inds][np.where(np.logical_and(opp_predictions,~testingTargets))[0]]]
+if 'prog' in feature_choice:
+    outcome_of_interest = 'Progression'
+    predicted_inds = np.where(opp_predictions)[0]
+    actual_inds = np.where(testingTargets)[0]
+else:
+    outcome_of_interest = 'Response'
+    lesion_inds = np.where(np.logical_and(~opp_predictions,testingTargets))[0]
 
-# %%
-auprc_iter,mcc_iter,aps,mcc,y_real,y_proba = f2.draw_cv_pr_curve(clf, cv, predictors, targets, title='Cross Validated PR Curve')
+# plotting parameters
+plt.rcParams.update({
+    "lines.color": "black",
+    "patch.edgecolor": "black",
+    "text.color": "black",
+    "axes.facecolor": "black",
+    "axes.edgecolor": "lightgray",
+    "axes.labelcolor": "black",
+    "xtick.color": "black",
+    "ytick.color": "black",
+    "grid.color": "lightgray",
+    "figure.facecolor": "white",
+    "figure.edgecolor": "black",
+    "savefig.facecolor": "white",
+    "savefig.edgecolor": "black",
+    "font.size": 18,  # Increase font size
+    "axes.titlesize": 18,
+    "axes.labelsize": 20,
+    "xtick.labelsize": 16,
+    "ytick.labelsize": 16
+})
 
-print('Truth count: ',np.sum(y_real))
-print('Predicted count: ',np.sum(y_proba>=0.5))
-print('++ ',np.sum(np.logical_and(y_real,y_proba>=0.5)))
-print('+- ',np.sum(np.logical_and(~y_real,y_proba>=0.5)))
-print('-+ ',np.sum(np.logical_and(y_real,~(y_proba>=0.5))))
-print('-- ',np.sum(np.logical_and(~y_real,~(y_proba>=0.5))))
+def wrap_labels(ax, width, break_long_words=False):
+    labels = []
+    for label in ax.get_xticklabels():
+        text = label.get_text()
+        wrapped_text = '\n'.join(textwrap.wrap(text, width=width, break_long_words=break_long_words))
+        labels.append(wrapped_text)
+    ax.set_xticklabels(labels, rotation=0)
+
+    labels = []
+    for label in ax.get_yticklabels():
+        text = label.get_text()
+        wrapped_text = '\n'.join(textwrap.wrap(text, width=width, break_long_words=break_long_words))
+        labels.append(wrapped_text)
+    ax.set_yticklabels(labels, rotation=0)
+
+
+training_data = [[np.sum(np.logical_and(same_predictions,trainingTargets)),np.sum(np.logical_and(~same_predictions,trainingTargets))],
+                 [np.sum(np.logical_and(same_predictions,~trainingTargets)),np.sum(np.logical_and(~same_predictions,~trainingTargets))]]
+testing_data = [[np.sum(np.logical_and(opp_predictions,testingTargets)),np.sum(np.logical_and(~opp_predictions,testingTargets))],
+                [np.sum(np.logical_and(opp_predictions,~testingTargets)),np.sum(np.logical_and(~opp_predictions,~testingTargets))]]
+
+
+# Create DataFrames for better visualization
+training_df = pd.DataFrame(training_data, index=['Definitive '+outcome_of_interest, 'NOT Definitive '+outcome_of_interest], columns=['Definitive '+outcome_of_interest, 'NOT Definitive '+outcome_of_interest])
+testing_df = pd.DataFrame(testing_data, index=['Definitive '+outcome_of_interest, 'NOT Definitive '+outcome_of_interest], columns=['Definitive '+outcome_of_interest, 'NOT Definitive '+outcome_of_interest])
+
+# Plot the confusion matrices side by side
+fig, axes = plt.subplots(1, 2, figsize=(16, 6))
+
+sns.heatmap(training_df, annot=True, fmt='d', cmap='Blues', ax=axes[0])
+axes[0].set_title('Dox Model Predictions on Dox Lesions')
+axes[0].set_xlabel('Predicted')
+axes[0].set_ylabel('Actual')
+# # Center-align y-tick labels
+# axes[0].yaxis.set_tick_params(rotation=0)
+# for label in axes[0].get_yticklabels():
+#     label.set_horizontalalignment('center')
+# axes[0].yaxis.set_tick_params(rotation=0)
+sns.heatmap(testing_df, annot=True, fmt='d', cmap='Greens', ax=axes[1])
+
+axes[1].set_title('Dox Model Predictions on Dox+Evo Lesions')
+axes[1].set_xlabel('Predicted')
+axes[1].set_ylabel('Actual')
+axes[1].yaxis.set_tick_params(rotation=0)
+# for label in axes[1].get_yticklabels():
+#     label.set_horizontalalignment('center')
+# axes[1].yaxis.set_tick_params(rotation=0)
+
+# Apply wrapping to the axes labels
+wrap_labels(axes[0], 10)
+wrap_labels(axes[1], 10)
+
+plt.tight_layout()
+plt.show()
 
 # %%
