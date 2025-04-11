@@ -13,7 +13,7 @@ import matplotlib
 
 # import statannotations
 import seaborn as sns
-from statannotations.Annotator import Annotator
+# from statannotations.Annotator import Annotator
 from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import GaussianNB
@@ -29,13 +29,13 @@ from statsmodels.stats.multitest import multipletests as mtc
 from scipy.stats import wilcoxon
 import scipy.spatial.distance as ssd
 from scipy.cluster import hierarchy
-from sklearn_extra.cluster import KMedoids
 matplotlib.rcParams.update({'font.size': 16})
 import warnings
 warnings.filterwarnings("ignore")  # "default" or "always" to turn back on
 from itertools import combinations
 from sklearn.utils import parallel_backend
 import textwrap
+from sklearn.metrics import roc_auc_score, average_precision_score, roc_curve, precision_recall_curve, auc
 
 # %% OPTIONAL (FOR PRESENTATIONS)
 
@@ -545,19 +545,55 @@ def isolateData(df,inds,featuresofInterest):
     
     return outFeatures,outTargets
 
+# %% PREPROCESSING PMH DATA
+
+pmh_data = pd.read_csv('/Users/caryngeady/Documents/GitHub/Mixed-Response-Work/spreadsheets/pyradiomics_output-PMH-5mm.csv')
+hfx = pd.read_csv('/Users/caryngeady/Desktop/PMH-Sarcoma/FAZA-SARC-HFX.csv')
+
+# locate the first index that contains 'original_shape'
+start_ind = pmh_data.columns.get_loc('original_shape_Elongation')
+pmh_radiomics = pmh_data.copy().iloc[:,start_ind:]
+pmh_radiomics.insert(0,'USUBJID',pmh_data.ID)
+pmh_radiomics.insert(1,'MorphRegion',pmh_data.MorphRegion)
+
+# separate into different morphological regions
+whole_lesion = pmh_radiomics[pmh_radiomics.MorphRegion == 'whole lesion'].reset_index(drop=True)
+exterior_rim = pmh_radiomics[pmh_radiomics.MorphRegion == 'exterior rim'].reset_index(drop=True)
+interior_rim = pmh_radiomics[pmh_radiomics.MorphRegion == 'interior rim'].reset_index(drop=True)
+lesion_core = pmh_radiomics[pmh_radiomics.MorphRegion == 'lesion core'].reset_index(drop=True)
+peripheral_ring = pmh_radiomics[pmh_radiomics.MorphRegion == 'peripheral ring'].reset_index(drop=True)
+
+# rename all columns in each dataframe to include the morphological region
+exterior_rim.rename(columns={col: col+'_exterior rim' for col in exterior_rim.columns[2:]}, inplace=True)
+interior_rim.rename(columns={col: col+'_interior rim' for col in interior_rim.columns[2:]}, inplace=True)
+lesion_core.rename(columns={col: col+'_lesion core' for col in lesion_core.columns[2:]}, inplace=True)
+peripheral_ring.rename(columns={col: col+'_peripheral ring' for col in peripheral_ring.columns[2:]}, inplace=True)
+
+# merge the dataframes
+pmh_radiomics = whole_lesion.copy().drop('MorphRegion',axis=1)
+pmh_radiomics = pd.concat([pmh_radiomics,exterior_rim.drop(['USUBJID','MorphRegion'],axis=1)],axis=1)
+pmh_radiomics = pd.concat([pmh_radiomics,interior_rim.drop(['USUBJID','MorphRegion'],axis=1)],axis=1)
+pmh_radiomics = pd.concat([pmh_radiomics,lesion_core.drop(['USUBJID','MorphRegion'],axis=1)],axis=1)
+pmh_radiomics = pd.concat([pmh_radiomics,peripheral_ring.drop(['USUBJID','MorphRegion'],axis=1)],axis=1)
+
+# isolate the data where HFX is available
+hfx_data = hfx.copy().dropna()
+pmh_sub = pmh_radiomics[pmh_radiomics.USUBJID.isin(hfx_data['Case #'])]
 
 # %% Testing specific features for different arms
 
 import scripts.functionals2 as f2
 
-# indicate model of interest
-feature_choice = 'rfc-prog33-10features'
+# indicate model of interest for Dox arm
+feature_choice = 'rfc-prog33-7features'
 df = features_volcorr.copy()
+scaleFlag = False
 
 Tr = 33
 outcomes = deltaV_perc > +Tr
 
 features = {
+            # Response to Dox Model
             'knn-prog33-8features'  : ['wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
             'knn-prog33-9features'  : ['wavelet-HHH_firstorder_Minimum_interior rim', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
             'log-prog33-8features'  : ['wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
@@ -566,6 +602,9 @@ features = {
             'rfc-prog25-7features'  : ['wavelet-HHH_firstorder_Minimum_interior rim', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'original_shape_VoxelVolume'],
             'rfc-prog33-7features'  : ['wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
             'rfc-prog33-10features' : ['wavelet-HHH_firstorder_Minimum_interior rim', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'gradient_glcm_ClusterTendency_exterior rim', 'original_glrlm_GrayLevelVariance_lesion core', 'original_firstorder_Minimum_interior rim', 'square_glrlm_GrayLevelVariance_interior rim', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'squareroot_glcm_SumSquares_lesion core', 'original_shape_VoxelVolume'],
+            # Response to Evo Model (Progression)
+            'evo-knnr25-9featPROG'  : ['wavelet-HLH_glrlm_HighGrayLevelRunEmphasis_lesion core', 'wavelet-HHH_firstorder_Minimum_interior rim', 'original_glcm_SumSquares_interior rim', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'wavelet-LHH_gldm_HighGrayLevelEmphasis', 'logarithm_firstorder_Variance_lesion core', 'wavelet-LHH_gldm_LargeDependenceLowGrayLevelEmphasis_interior rim', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_interior rim', 'original_shape_VoxelVolume'],
+            'evo-knnp50-6featPROG'  : ['wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_lesion core', 'gradient_glcm_ClusterTendency_exterior rim', 'gradient_gldm_HighGrayLevelEmphasis_exterior rim', 'gradient_glcm_SumSquares', 'wavelet-HLL_glrlm_HighGrayLevelRunEmphasis_interior rim', 'original_shape_VoxelVolume'],
 
             }
 
@@ -578,30 +617,33 @@ models = {
             'rfc-prog25-7features'  : RandomForestClassifier(**{'criterion': 'entropy', 'max_depth': 10, 'max_features': 'sqrt', 'n_estimators': 400, 'random_state': 1}),
             'rfc-prog33-7features'  : RandomForestClassifier(**{'criterion': 'gini', 'max_depth': 10, 'max_features': 'sqrt', 'n_estimators': 200, 'random_state': 1}),
             'rfc-prog33-10features' : RandomForestClassifier(**{'criterion': 'gini', 'max_depth': 10, 'max_features': 'sqrt', 'n_estimators': 200, 'random_state': 1}),
-
+            # Response to Evo Model (Progression)
+            'evo-knnr25-9featPROG'  : KNeighborsClassifier(**{'metric': 'euclidean', 'n_neighbors': 11, 'weights': 'uniform'}),
+            'evo-knnp50-6featPROG'  : KNeighborsClassifier(**{'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}),
             }
 
 
 # specify training data (lesions that received doxorubicin monotherapy)
-doxinds = np.where(baseline['ARM']==0)[0]
-trainingFeatures = df[features[feature_choice]].iloc[doxinds,:]
+doxinds = baseline['ARM']==0
+trainingFeatures = df[features[feature_choice]][doxinds]
 trainingTargets = outcomes[doxinds]
 
 # specify testing data (lesions that received TH-302 plus doxorubicin)
-evoinds = np.where(baseline['ARM']==1)[0]
-testingFeatures = df[features[feature_choice]].iloc[evoinds,:]
+evoinds = baseline['ARM']==1
+testingFeatures = df[features[feature_choice]][evoinds]
 testingTargets = outcomes[evoinds]
 
+if scaleFlag:
+    scaler = preprocessing.StandardScaler()
+    trainingFeatures = scaler.fit_transform(trainingFeatures)
+    testingFeatures = scaler.fit_transform(testingFeatures)
+
 # instantiate the model object
-# model = LogisticRegression(**params[feature_choice])
-# model = GaussianNB()
-# model = KNeighborsClassifier(**params[feature_choice])
-model = models[feature_choice]
+dox_model = models[feature_choice]
+dox_model.fit(trainingFeatures,trainingTargets)
 
-model.fit(trainingFeatures,trainingTargets)
-
-same_predictions = model.predict(trainingFeatures)
-opp_predictions = model.predict(testingFeatures)  # testing model from one arm on lesions from other arm
+same_predictions = dox_model.predict(trainingFeatures)
+opp_predictions = dox_model.predict(testingFeatures)  # testing model from one arm on lesions from other arm
 
 print('Dox Model on Dox Lesions')
 print('Predicted definitive and was definitive ',np.sum(np.logical_and(same_predictions,trainingTargets)))
@@ -618,11 +660,15 @@ print('Predicted NOT definitive and NOT definitive',np.sum(np.logical_and(~opp_p
 
 if 'prog' in feature_choice:
     outcome_of_interest = 'Progression'
-    predicted_inds = np.where(opp_predictions)[0]
-    actual_inds = np.where(testingTargets)[0]
+    responding_lesions = np.where(np.logical_and(opp_predictions,~testingTargets))[0]
+    non_responding_lesions = np.where(testingTargets)[0]
+    evo_model_lesions = np.sort(np.concatenate((responding_lesions, non_responding_lesions)))
+
 else:
     outcome_of_interest = 'Response'
-    lesion_inds = np.where(np.logical_and(~opp_predictions,testingTargets))[0]
+    responding_lesions = np.where(np.logical_and(~opp_predictions,testingTargets))[0]
+    non_responding_lesions = np.where(~testingTargets)[0]
+    evo_model_lesions = np.sort(np.concatenate((responding_lesions, non_responding_lesions)))
 
 # plotting parameters
 plt.rcParams.update({
@@ -679,20 +725,12 @@ sns.heatmap(training_df, annot=True, fmt='d', cmap='Blues', ax=axes[0])
 axes[0].set_title('Dox Model Predictions on Dox Lesions')
 axes[0].set_xlabel('Predicted')
 axes[0].set_ylabel('Actual')
-# # Center-align y-tick labels
-# axes[0].yaxis.set_tick_params(rotation=0)
-# for label in axes[0].get_yticklabels():
-#     label.set_horizontalalignment('center')
-# axes[0].yaxis.set_tick_params(rotation=0)
 sns.heatmap(testing_df, annot=True, fmt='d', cmap='Greens', ax=axes[1])
 
 axes[1].set_title('Dox Model Predictions on Dox+Evo Lesions')
 axes[1].set_xlabel('Predicted')
 axes[1].set_ylabel('Actual')
 axes[1].yaxis.set_tick_params(rotation=0)
-# for label in axes[1].get_yticklabels():
-#     label.set_horizontalalignment('center')
-# axes[1].yaxis.set_tick_params(rotation=0)
 
 # Apply wrapping to the axes labels
 wrap_labels(axes[0], 10)
@@ -701,4 +739,346 @@ wrap_labels(axes[1], 10)
 plt.tight_layout()
 plt.show()
 
-# %%
+# %% EVO VALIDATION
+
+# indicate model of interest for Evo arm
+feature_choice = 'evo-knnp50-6featPROG'
+df = features_volcorr.copy()
+scaleFlag = False
+hf_thresh = 0.3
+Tr = 50
+outcomes = deltaV_perc < +Tr
+
+
+# specify the secondary training data (lesions that received TH-302 plus doxorubicin)
+trainingEvoFeatures = df[features[feature_choice]].iloc[evoinds.index[evoinds][evo_model_lesions]]
+trainingEvoTargets = outcomes[evoinds.index[evoinds][evo_model_lesions]]
+
+evo_info = baseline.iloc[evoinds.index[evoinds][evo_model_lesions]]
+evo_info.insert(2,'Response(PROG)',trainingEvoTargets)
+
+# id patients with a mixed response (i.e. definitive and non-definitive lesions)
+patients,numlesions = np.unique(evo_info.USUBJID,return_counts=True)
+mixed_response = evo_info.copy()[evo_info.USUBJID.isin(patients[numlesions > 1])]
+mixed_response.pop('ARM')
+mixed_response = mixed_response.groupby('USUBJID').apply(lambda x: np.unique(x)>1)
+mixed_response = evo_info.groupby('USUBJID')['Response(PROG)'].apply(lambda x: x.nunique() > 1)
+
+
+# specify validation data (primary tumors with HFX data)
+validationFeatures = pmh_sub[features[feature_choice]]
+validationTargets = (hfx_data['HFX'] > hf_thresh).values
+
+if scaleFlag:
+    scaler = preprocessing.StandardScaler()
+    trainingEvoFeatures = scaler.fit_transform(trainingFeatures)
+    validationFeatures = scaler.fit_transform(pmh_sub[features[feature_choice]])
+
+# instantiate the model object
+evo_model = models[feature_choice]
+evo_model.fit(trainingEvoFeatures,trainingEvoTargets)
+
+same_predictions = evo_model.predict(trainingEvoFeatures)
+opp_predictions = evo_model.predict(validationFeatures)  # testing model from one arm on lesions from other arm
+
+# Report
+print('Evo Model on Evo Lesions')
+print('Predicted definitive and was definitive ',np.sum(np.logical_and(same_predictions,trainingEvoTargets)))
+print('Predicted definitive and NOT definitive',np.sum(np.logical_and(same_predictions,~trainingEvoTargets)))
+print('Predicted NOT definitive and definitive',np.sum(np.logical_and(~same_predictions,trainingEvoTargets)))
+print('Predicted NOT definitive and NOT definitive',np.sum(np.logical_and(~same_predictions,~trainingEvoTargets)))
+print('--------------------')
+print('Evo Model on PMH Data')
+print('Predicted definitive and was definitive ',np.sum(np.logical_and(opp_predictions,validationTargets)))
+print('Predicted definitive and NOT definitive',np.sum(np.logical_and(opp_predictions,~validationTargets)))
+print('Predicted NOT definitive and definitive',np.sum(np.logical_and(~opp_predictions,validationTargets)))
+print('Predicted NOT definitive and NOT definitive',np.sum(np.logical_and(~opp_predictions,~validationTargets)))
+
+training_data = [[np.sum(np.logical_and(same_predictions,trainingEvoTargets)),np.sum(np.logical_and(~same_predictions,trainingEvoTargets))],
+                 [np.sum(np.logical_and(same_predictions,~trainingEvoTargets)),np.sum(np.logical_and(~same_predictions,~trainingEvoTargets))]]
+testing_data = [[np.sum(np.logical_and(opp_predictions,validationTargets)),np.sum(np.logical_and(~opp_predictions,validationTargets))],
+                [np.sum(np.logical_and(opp_predictions,~validationTargets)),np.sum(np.logical_and(~opp_predictions,~validationTargets))]]
+
+
+# Create DataFrames for better visualization
+training_df = pd.DataFrame(training_data, index=['Definitive '+outcome_of_interest, 'NOT Definitive '+outcome_of_interest], columns=['Definitive '+outcome_of_interest, 'NOT Definitive '+outcome_of_interest])
+testing_df = pd.DataFrame(testing_data, index=['Hypoxic', 'NOT Hypoxic'], columns=['Hypoxic', 'NOT Hypoxic'])
+
+# Plot the confusion matrices side by side
+fig, axes = plt.subplots(1, 2, figsize=(16, 6))
+
+sns.heatmap(training_df, annot=True, fmt='d', cmap='Blues', ax=axes[0])
+axes[0].set_title('Evo Model Predictions on Evo Lesions')
+axes[0].set_xlabel('Predicted')
+axes[0].set_ylabel('Actual')
+sns.heatmap(testing_df, annot=True, fmt='d', cmap='Greens', ax=axes[1])
+
+axes[1].set_title('Evo Model Predictions on PMH Data')
+axes[1].set_xlabel('Predicted')
+axes[1].set_ylabel('Actual')
+axes[1].yaxis.set_tick_params(rotation=0)
+
+# Apply wrapping to the axes labels
+wrap_labels(axes[0], 10)
+wrap_labels(axes[1], 10)
+
+plt.tight_layout()
+plt.show()
+
+# %% PERFORMANCE METRICS AND PLOTS
+
+# reset the plotting parameters
+plt.rcParams.update(plt.rcParamsDefault)
+
+# Calculate performance metrics
+def calculate_metrics(model, X, y):
+    y_pred = model.predict(X)
+    y_prob = model.predict_proba(X)[:, 1]
+    auroc = roc_auc_score(y, y_prob)
+    auprc = average_precision_score(y, y_prob)
+    return auroc, auprc, y_pred, y_prob
+
+# Plot ROC and Precision-Recall curves
+def plot_curves(y, y_prob, title_suffix):
+    fpr, tpr, _ = roc_curve(y, y_prob)
+    precision, recall, _ = precision_recall_curve(y, y_prob)
+    
+    roc_auc = auc(fpr, tpr)
+    pr_auc = auc(recall, precision)
+    
+    plt.figure(figsize=(12, 5))
+    
+    plt.subplot(1, 2, 1)
+    plt.plot(fpr, tpr, color='darkorange', lw=2, label='ROC curve (area = %0.2f)' % roc_auc)
+    plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver Operating Characteristic ' + title_suffix)
+    plt.legend(loc="lower right")
+    
+    plt.subplot(1, 2, 2)
+    plt.plot(recall, precision, color='blue', lw=2, label='PR curve (area = %0.2f)' % pr_auc)
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('Recall')
+    plt.ylabel('Precision')
+    plt.title('Precision-Recall Curve ' + title_suffix)
+    plt.legend(loc="lower left")
+    
+    plt.tight_layout()
+    plt.show()
+
+# Calculate and plot metrics for Dox model on Dox lesions
+auroc_dox, auprc_dox, y_pred_dox, y_prob_dox = calculate_metrics(dox_model, trainingFeatures, trainingTargets)
+print(f'Dox Model on Dox Lesions - AUROC: {auroc_dox:.2f}, AUPRC: {auprc_dox:.2f}')
+plot_curves(trainingTargets, y_prob_dox, '(Dox Model on Dox Lesions)')
+
+# Calculate and plot metrics for Dox model on Dox+Evo lesions
+auroc_evo, auprc_evo, y_pred_evo, y_prob_evo = calculate_metrics(dox_model, testingFeatures, testingTargets)
+print(f'Dox Model on Dox+Evo Lesions - AUROC: {auroc_evo:.2f}, AUPRC: {auprc_evo:.2f}')
+plot_curves(testingTargets, y_prob_evo, '(Dox Model on Dox+Evo Lesions)')
+
+# Calculate and plot metrics for Evo model on Evo lesions
+auroc_evo_train, auprc_evo_train, y_pred_evo_train, y_prob_evo_train = calculate_metrics(evo_model, trainingEvoFeatures, trainingEvoTargets)
+print(f'Evo Model on Evo Lesions - AUROC: {auroc_evo_train:.2f}, AUPRC: {auprc_evo_train:.2f}')
+plot_curves(trainingEvoTargets, y_prob_evo_train, '(Evo Model on Evo Lesions)')
+
+# Calculate and plot metrics for Evo model on PMH data
+auroc_pmh, auprc_pmh, y_pred_pmh, y_prob_pmh = calculate_metrics(evo_model, validationFeatures, validationTargets)
+print(f'Evo Model on PMH Data - AUROC: {auroc_pmh:.2f}, AUPRC: {auprc_pmh:.2f}')
+plot_curves(validationTargets, y_prob_pmh, '(Evo Model on PMH Data)')
+
+# %% TRAINING EVO MODEL
+
+# import warnings
+# warnings.filterwarnings("ignore")
+# warnings.simplefilter(action='ignore', category=FutureWarning)
+
+# import sys
+# import warnings
+
+# # Ignore all warnings
+# warnings.filterwarnings("ignore")
+
+# df = features_volcorr.copy()
+
+# # modifiable arguments (preset for analysis)
+# Tr = [-50,-33,-25,+25,+33,+50]
+# arm = 1
+# max_features = 10
+# splits = 10
+# index_choice = 'evo' #'subset+'
+# model_choice = 'randomforest' # 'logistic', 'kNN', 'naivebayes', 'svm', 'randomforest'
+# dat = 'imaging'
+
+# # Open a file to write the log
+# log_file = open('/Users/caryngeady/Documents/GitHub/Mixed-Response-Work/'+model_choice+'.log', 'w')
+# original_stdout = sys.stdout
+# # Redirect stdout to the log file
+# sys.stdout = log_file
+
+# for threshold in Tr:
+#     # preset parameters
+#     if threshold < 0:
+#         deltaVbin = deltaV_perc < threshold
+#     else:
+#         deltaVbin = deltaV_perc > threshold
+
+#     print('--------------------')
+#     print('Tr: {} %'.format(threshold))
+
+#     target_choice = deltaVbin         # deltaVbin, deltaVcat, delatV_perc
+
+#     print('Model used: {}'.format(model_choice))
+#     if arm == 0:
+#         print('Trial Arm: Doxorubicin monotherapy')
+#     else:
+#         print('Trial Arm: TH-302 plus Doxorubicin')
+#     print('--------------------')
+
+
+#     indices = {
+#                 # 'subset'  : np.where(np.logical_and((baselineVolume[inds_noOutliers]<vol_high),(baselineVolume[inds_noOutliers]>vol_low)))[0],
+#                 # 'subset+' : np.where(np.logical_and(np.logical_and((baselineVolume<vol_high),(baselineVolume>vol_low)),(baseline['ARM']==arm)))[0],
+#                 'arm'     : np.where(baseline['ARM']==arm)[0],
+#                 'evo'     : np.where(baseline['ARM']==arm)[0][evo_model_lesions],
+#                 'all'     : range(len(target_choice))
+#             }
+
+#     models = {
+#                 'logistic'   : [LogisticRegression(random_state=1),{
+#                                                                     'penalty'  : ['l1', 'l2', 'elasticnet', None],
+#                                                                     'solver'   : ['lbfgs', 'liblinear', 'newton-cg', 'newton-cholesky', 'sag', 'saga'],
+#                                                                     'tol'      : [1e-4, 1e-5, 1e-6, 1e-7, 1e-8, 1e-9],
+#                                                                     'max_iter' : [50,100,150,200]
+#                                                                     }],
+#                 'naivebayes' : [GaussianNB(),{}],
+#                 'kNN'        : [KNeighborsClassifier(),{
+#                                                             'n_neighbors' : [3,5,7,9,11],
+#                                                             'weights'     : ['uniform','distance'],
+#                                                             'metric'      : ['euclidean','manhattan','minkowski']
+#                                                             }],
+#                 'svm'        : [SVC(random_state=1),{
+#                                                         'C'         : [0.1,1,10,100,1000],
+#                                                         'kernel'    : ['linear','poly','rbf','sigmoid'],
+#                                                         'degree'    : [2,3,4,5,6],
+#                                                         'gamma'     : ['scale','auto']
+#                                                         }],
+#                 'randomforest' : [RandomForestClassifier(random_state=1),{
+#                                                                         'n_estimators' : [100,200,300,400,500],
+#                                                                         'criterion'    : ['gini','entropy'],
+#                                                                         'max_depth'    : [10,20,30,40,50],
+#                                                                         'max_features' : ['auto','sqrt','log2']
+#                                                                         }]
+#                 # insert additional models with relevant hyperparameters here
+#             }
+
+#     # initialize for results table
+#     selected_features = []
+#     auroc = []
+#     auprc = []
+#     neg_log_loss = []
+#     mcc_lst = []
+#     wilcoxp = []
+#     wilcoxp.append(np.nan)
+#     fdr = []
+
+
+#     for i in range(1,max_features+1):
+
+#         # features and outcomes
+#         predictors = df.iloc[indices[index_choice],:].reset_index(drop=True)
+#         # remove any data points that may have missing values (sometimes core too small and nans live there instead of radiomic features)
+#         predInds = predictors[predictors.isnull().any(axis=1)].index
+#         targInds = predictors.index
+#         harmInds = [i for i in targInds if i not in predInds]
+#         # consolidate
+#         predictors = predictors.loc[harmInds,:]
+#         targets = target_choice[indices[index_choice]][harmInds] 
+
+#         # feature selection
+#         predictors.pop('original_shape_VoxelVolume')
+#         fs = SelectKBest(score_func=f_classif, k=i-1)
+#         mask = fs.fit(predictors, targets).get_support()
+#         predictors = predictors[predictors.columns[mask]]
+#         predictors['original_shape_VoxelVolume'] = df.original_shape_VoxelVolume.iloc[indices[index_choice]].reset_index(drop=True)
+        
+            
+#         if i == 1:
+#             print('Progressor Fraction: %.3f' % (sum(targets==1)/len(targets)))
+#             print('Stable Fraction: %.3f' % (sum(targets==0)/len(targets)))
+#             print('Total Lesions: %f' % (len(targets)))
+#             print('--------------------')    
+            
+#         selected_features.append(predictors.columns)
+#         print('Features selected({}): {}'.format(len(predictors.columns),list(predictors.columns)))
+
+#         # modeling
+#         model = models[model_choice][0]
+#         params = models[model_choice][1]
+        
+#         if model_choice != 'naivebayes':
+#             gs = GridSearchCV(model, params, cv=5, scoring='matthews_corrcoef',n_jobs=1)
+#             gs.fit(predictors,targets)
+#             print('Best Params: ',gs.best_params_)
+#             model = gs.best_estimator_
+        
+        
+#         scaler = preprocessing.StandardScaler()    
+#         clf = make_pipeline(scaler, model)
+#         cv = RepeatedStratifiedKFold(n_splits=splits, n_repeats=10, random_state=1)
+
+    
+#         negLL = cross_val_score(clf, predictors.values, targets.astype('int'), scoring='neg_log_loss', cv=cv, n_jobs=1)
+#         neg_log_loss.append(np.mean(negLL))
+        
+#         auc = cross_val_score(clf, predictors.values, targets.astype('int'), scoring='roc_auc_ovo', cv=cv, n_jobs=1)    
+#         auc_lower,auc_upper = f.calc_conf_intervals(auc)
+#         print('Average AUROC: {:.2f} (95% conf. int. [{:.2f},{:.2f}])'.format(np.mean(auc),auc_lower,auc_upper))
+#         auroc.append(np.mean(auc))
+        
+#         aps = cross_val_score(clf, predictors.values, targets.astype('int'), scoring='average_precision', cv=cv, n_jobs=1)    
+#         aps_lower,aps_upper = f.calc_conf_intervals(aps)
+#         print('Average Precision: {:.2f} (95% conf. int. [{:.2f},{:.2f}])'.format(np.mean(aps),aps_lower,aps_upper))
+#         auprc.append(np.mean(aps))
+        
+#         mcc = cross_val_score(clf, predictors.values, targets.astype('int'), scoring='matthews_corrcoef', cv=cv, n_jobs=1)    
+#         mcc_lower,mcc_upper = f.calc_conf_intervals(mcc)
+#         print('Average MCC: {:.2f} (95% conf. int. [{:.2f},{:.2f}])'.format(np.mean(mcc),mcc_lower,mcc_upper))
+#         mcc_lst.append(np.mean(mcc))
+        
+#         print('--------------------')
+#         print('Significance Testing')
+#         print('--------------------')
+        
+#         if i == 1:
+#             avg_precision = aps
+        
+#         if i > 1:
+#             print('Wilcoxon p-value: ',wilcoxon(avg_precision,aps)[1])
+#             wilcoxp.append(wilcoxon(avg_precision,aps)[1])
+        
+#         with parallel_backend('loky', n_jobs=4):
+#             scores_precision, perm_scores_precision, pvalue_precision = permutation_test_score(
+#                 clf, predictors.values, targets.astype('int'), scoring="matthews_corrcoef", cv=cv, n_permutations=1000,n_jobs=4
+#             )
+#         print('p-value: {:.3f}'.format(pvalue_precision))
+#         print('FDR-corrected p-value: {:.3f}'.format(mtc(np.repeat(pvalue_precision,10))[1][0]))
+#         fdr.append(mtc(np.repeat(pvalue_precision,10))[1][0])
+
+#         print('--------------------')
+        
+#     results_df = pd.DataFrame([auroc,auprc,mcc_lst,neg_log_loss,wilcoxp,fdr]).T
+#     results_df.columns = ['AUROC','AUPRC','MCC','NegLogLoss','Wilcoxon P-Value','FDR']
+#     results_df.index = range(1,max_features+1)
+#     print(results_df)
+
+
+# # Restore stdout to its original state
+# sys.stdout = original_stdout
+# # Close the log file
+# log_file.close()
+# print('Cell finished running')
+# # %%
